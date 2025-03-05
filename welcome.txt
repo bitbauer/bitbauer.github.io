@@ -1,0 +1,9 @@
+<span id="a">bitbauer@term01</span>:<span id="b">~</span><span id="c">$</span> cd ~
+<span id="a">bitbauer@term01</span>:<span id="b">~</span><span id="c">$</span> cat welcome.txt<br/><br/>
+
+Welcome to my personal profile!
+<p>More details about favorite projects will follow <!-- slightdelayhere-->soon.</p>
+
+My favorite quote,
+"<span id="k">It is easy to make things hard, but hard to make them easy.</span>".
+<p>Cheers!</p>
