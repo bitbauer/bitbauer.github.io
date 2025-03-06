@@ -5,20 +5,18 @@ export class Terminal {
     element: HTMLElement;
     accessCountimer: number;
 
-    constructor(filename: string, elementId: string, speed: number) {
+    constructor(text: string, elementId: string, speed: number) {
         this.element = document.getElementById(elementId)!;
         this.speed = speed;
-        this.text = '';
+        this.text = text;
         this.index = 0;
 
         this.accessCountimer = setInterval(() => {
             this.updLstChr();
         }, 500);
 
-        fetch(filename)
-            .then(response => response.text())
-            .then(data=>  this.text=data)
-            .catch(error => console.error(error));
+        console.log("TEXT:");
+        console.log(this.text);
     }
 
     content(): string {
