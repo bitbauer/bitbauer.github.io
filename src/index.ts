@@ -1,15 +1,18 @@
-import { Terminal } from './terminal'
+import { Terminal } from './terminal.js'
 
-var welcome = new Terminal('../welcome.txt', 'console', 1);
+var text = await fetch('../welcome.txt').then(response => response.text());
+var welcome = new Terminal(text, 'console', 1);
 
-var timer = setInterval('t();', 30);
-function t() {
-    welcome.addText(0);
+var interval = 30;
+var timer = setInterval(
+    () => {
+        welcome.addText(0);
     
-    if (welcome.index >= welcome.text.length) {
-        clearInterval(timer);
-    }
-}
+        if (welcome.index >= welcome.text.length) {
+            clearInterval(timer);
+        }
+    },
+    interval);
 
 document.onkeydown = function (e) {
     if (e.charCode == 27) {

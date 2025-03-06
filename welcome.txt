@@ -1,4 +1,4 @@
-<span id="a">bitbauer@term01</span>:<span id="b">~</span><span id="c">$</span> cd ~
+<span id="a">bitbauer@term01</span>:<span id="b">/</span><span id="c">$</span> cd ~
 <span id="a">bitbauer@term01</span>:<span id="b">~</span><span id="c">$</span> cat welcome.txt<br/><br/>
 
 Welcome to my personal profile!
